@@ -9,7 +9,6 @@ const Home = () => {
       <title>Mount Strings</title>
     </Head>
 
-
     <HomePage />
 
     </>
