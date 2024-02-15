@@ -4,6 +4,7 @@ import HeroSection from '../components/herosection'
 import SimpleAbout from '../components/simpleabout'
 import Highlights from '../components/highlights'
 import Banner from '../components/banner'
+import Reviews from '../components/reviews'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <SimpleAbout />
         <Highlights />
         <Banner />
+        <Reviews />
     </>
   )
 }

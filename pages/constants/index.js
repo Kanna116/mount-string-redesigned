@@ -66,3 +66,51 @@ export const banner={
     text:`Experience the future of software with Mount String Technologies Pvt. Ltd.!`,
     image:'/images/banner.webp'
 }
+
+export const reviews=[
+    {
+        name:'Dileep Varma Gadhiraju ',
+        date:'6/1/2024',
+        review:'Wonderful place to work.. The team is fabulous',
+        rating:'5',
+        image:'/images/reviewer.webp'
+    },
+    {
+        name:'Akki Akshay4B8',
+        date:'21/11/2023',
+        review:`Feeling happy to working in Mount string technology, good environment for freshers to improve their skills and knowledge.
+        Overall it's beter opportunity to enhance our skills from a scratch.`,
+        rating:'5',
+        image:'/images/reviewer.webp'
+    },
+    {
+        name:'Pandu Babu',
+        date:'17/11/2023',
+        review:'Threads Of Future Technology " This Tag line is really apt For this Company. And coming to Training Process Teaching Proficiency is So Effective For Career Growth .',
+        rating:'4',
+        image:'/images/reviewer.webp'
+    },
+    {
+        name:'Dileep Varma Gadhiraju ',
+        date:'6/1/2024',
+        review:'Wonderful place to work.. The team is fabulous',
+        rating:'5',
+        image:'/images/reviewer.webp'
+    },
+    {
+        name:'Akki Akshay4B8',
+        date:'21/11/2023',
+        review:`Feeling happy to working in Mount string technology, good environment for freshers to improve their skills and knowledge.
+        Overall it's beter opportunity to enhance our skills from a scratch.`,
+        rating:'4',
+        image:'/images/reviewer.webp'
+    },
+    {
+        name:'Pandu Babu',
+        date:'17/11/2023',
+        review:'" Threads Of Future Technology " This Tag line is really apt For this Company. And coming to Training Process Teaching Proficiency is So Effective For Career Growth .',
+        rating:'5',
+        image:'/images/reviewer.webp'
+    },
+    
+]
