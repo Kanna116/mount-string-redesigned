@@ -62,6 +62,7 @@ export const highlights = [
     },
 ]
 
-export const banner=[{
-    text:`Experience the future of software with Mount String Technologies Pvt. Ltd.!`
-}]
+export const banner={
+    text:`Experience the future of software with Mount String Technologies Pvt. Ltd.!`,
+    image:'/images/banner.webp'
+}
