@@ -1,9 +1,17 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { CiUser } from "react-icons/ci";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { MdClose } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
+import { navlinks } from '../constants';
 
 const Navbar = () => {
+
+    const [menu, setMenu] = useState(false);
+
+
+
     return (
         <div className='w-full   lg:px-[100px] md:px-[64px] px-[24px]  flex items-center justify-between h-20'>
             <div className="logo h-16 w-fit shrink-0">
@@ -18,14 +26,9 @@ const Navbar = () => {
             </div>
 
             <ul className='h-full sm:hidden lg:flex hidden  items-center justify-between uppercase font-medium text-sm [&>*]:duration-100 tracking-wider  '>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>Home</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>Our services</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>Development</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>Blog</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>Careers</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>About Us</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>HRMS</li>
-                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>EMS Portal</li>
+                {
+                    navlinks.map((item, index) => <li key={index} className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>{item.name}</li>)
+                }
             </ul>
 
 
@@ -35,11 +38,29 @@ const Navbar = () => {
                 </span>
             </div>
 
+            {/* menu for mobiles */}
             <div>
                 <div className="menu lg:hidden">
-                    <span className='text-2xl'>
+                    <span
+                        className='text-2xl'
+                        onClick={() => setMenu(true)}
+                    >
                         <HiOutlineMenuAlt2 />
                     </span>
+                    <ul style={{ transform: `translateX(${menu ? 0 : "-100%"})` }} className='h-full w-full absolute top-0 left-0  bg-zinc-100 flex flex-col  items-start justify-center gap-4 uppercase font-medium text-sm duration-300 ease-in-out tracking-wider  '>
+                        <span
+                            className='absolute text-4xl top-6 lg:right-[100px] md:right-[64px] right-[24px]'
+                            onClick={() => setMenu(false)}>
+                            <MdClose />
+                        </span>
+                        {
+                            navlinks.map((item, index) => <li key={index} className='w-fit px-5 cursor-pointer text-2xl border-zinc-950 flex items-center duration-300 group [&>*]:duration-300 hover:translate-x-[30px]'><span className='scale-0 text-3xl group-hover:scale-100'><MdArrowOutward /></span> {item.name}</li>)
+                        }
+                        <div className='h-[0.1px] w-[90%] bg-zinc-900 mx-auto'></div>
+
+                        <button className='text-lg uppercase font-semibold mx-10 bg-black px-8 py-2 text-white rounded-full'>Signup</button>
+                    </ul>
+
                 </div>
             </div>
 
