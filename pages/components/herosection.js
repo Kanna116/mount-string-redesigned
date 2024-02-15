@@ -17,6 +17,7 @@ const HeroSection = () => {
                     src={'/images/hero-image.png'}
                     width={1000}
                     height={1000}
+                    draggable={false}
                     className='w-full h-full object-cover'
                     alt='image of productivity at mount strings'
                 />

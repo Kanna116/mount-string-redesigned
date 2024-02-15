@@ -19,6 +19,7 @@ const Highlights = () => {
                                 src={item.image}
                                 width={1000}
                                 height={1000}
+                                draggable={false}
                                 alt='Our Highlight'
                                 className='w-full h-full object-cover'
                             />
