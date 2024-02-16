@@ -44,7 +44,7 @@ const Footer = () => {
                                 <h1 className='text-xl font-semibold'>{item.head}</h1>
                                 <ul className='list-none'>
                                     {item.links.map((link, index) => {
-                                        return <li className='cursor-pointer'>{link}</li>
+                                        return <li key={index} className='cursor-pointer'>{link}</li>
                                     })}
                                 </ul>
                             </div>
