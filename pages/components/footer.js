@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { FaFacebook, FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { FaInstagram, FaRegCopyright } from "react-icons/fa6";
 import { companyDetails, footerLinks } from '../constants';
-import { FaRegCopyright } from "react-icons/fa6";
+import ScrollToTopBtn from './scrolltotopbtn';
 
 const Footer = () => {
 
@@ -65,6 +65,7 @@ const Footer = () => {
             {/* copyright */}
             <h3 className='absolute bottom-10 left-10 flex items-center gap-2'>Copyright <span><FaRegCopyright /></span> {currentYear} Mount String Technologies</h3>
 
+            <ScrollToTopBtn />
         </div>
     )
 }
