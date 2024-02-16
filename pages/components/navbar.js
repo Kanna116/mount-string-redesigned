@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CiUser } from "react-icons/ci";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
@@ -9,6 +9,17 @@ import { navlinks } from '../constants';
 const Navbar = () => {
 
     const [menu, setMenu] = useState(false);
+
+    useEffect(() => {
+        if (menu) {
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            document.body.style.overflow = 'visible';
+            document.body.style.overflowX = 'hidden';
+
+        };
+    }, [menu]);
 
 
 
@@ -47,7 +58,7 @@ const Navbar = () => {
                     >
                         <HiOutlineMenuAlt2 />
                     </span>
-                    <ul style={{ transform: `translateX(${menu ? 0 : "-100%"})` }} className='h-full w-full absolute top-0 left-0  bg-zinc-100 flex flex-col  items-start justify-center gap-4 uppercase font-medium text-sm duration-300 ease-in-out tracking-wider  '>
+                    <ul style={{ transform: `translateX(${menu ? 0 : "-100%"})` }} className='h-full w-full fixed top-0 left-0  bg-zinc-100 flex flex-col  items-start justify-center gap-4 uppercase font-medium text-sm duration-300 ease-in-out tracking-wider  '>
                         <span
                             className='absolute text-4xl top-6 lg:right-[100px] md:right-[64px] right-[24px]'
                             onClick={() => setMenu(false)}>
