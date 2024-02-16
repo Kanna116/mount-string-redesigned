@@ -6,6 +6,7 @@ import Highlights from '../components/highlights'
 import Banner from '../components/banner'
 import Reviews from '../components/reviews'
 import LiveMap from '../components/livemap'
+import ContactAndsubscription from '../components/contactandsubscription'
 
 const HomePage = () => {
   return (
@@ -16,7 +17,9 @@ const HomePage = () => {
         <Highlights />
         <Banner />
         <Reviews />
-        <LiveMap />
+        <ContactAndsubscription />
+        {/* <LiveMap /> */}
+
     </>
   )
 }
