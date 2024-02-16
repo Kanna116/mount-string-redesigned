@@ -140,3 +140,8 @@ export const footerLinks = [{
 }
 
 ]
+const  nothing=()=>{
+    return <></>
+}
+
+export default nothing
