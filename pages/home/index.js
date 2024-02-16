@@ -7,6 +7,7 @@ import Banner from '../components/banner'
 import Reviews from '../components/reviews'
 import LiveMap from '../components/livemap'
 import ContactAndsubscription from '../components/contactandsubscription'
+import QuickScheduling from '../components/quickscheduling'
 
 const HomePage = () => {
   return (
@@ -18,7 +19,8 @@ const HomePage = () => {
         <Banner />
         <Reviews />
         <ContactAndsubscription />
-        {/* <LiveMap /> */}
+        <LiveMap />
+        <QuickScheduling />
 
     </>
   )
