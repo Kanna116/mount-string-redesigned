@@ -9,6 +9,7 @@ const Footer = () => {
 
     return (
         <div className='w-full h-[70vh] shadow-[0px_-10px_20px_#00000005] flex items-start justify-center px-24 lg:px[64px] md:px-[64px]'>
+            {/* company details */}
             <div className="company-details w-1/3 h-full flex flex-col items-start justify-start gap-5">
                 <div className="logo w-[150px] p-5 aspect-square">
                     <Image
@@ -19,6 +20,8 @@ const Footer = () => {
                         draggable={false}
                         className='w-full h-full object-cover select-none' />
                 </div>
+
+                
                 <h1 className='text-lg font-semibold'>{name}</h1>
                 <p className='text-xs w-2/3'>{address}</p>
                 <div className='mt-7'>
@@ -27,7 +30,7 @@ const Footer = () => {
                 </div>
 
             </div>
-
+            {/* Links */}
             <div className="links w-2/3 h-full flex items-start justify-start">
                 {
                     footerLinks.map((item, index) => {
@@ -52,6 +55,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+
+
+            {/* copyright */}
+            <h3></h3>
 
         </div>
     )
