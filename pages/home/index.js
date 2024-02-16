@@ -1,14 +1,12 @@
-import React from 'react'
-import Navbar from '../components/navbar'
-import HeroSection from '../components/herosection'
-import SimpleAbout from '../components/simpleabout'
-import Highlights from '../components/highlights'
 import Banner from '../components/banner'
-import Reviews from '../components/reviews'
-import LiveMap from '../components/livemap'
 import ContactAndsubscription from '../components/contactandsubscription'
-import QuickScheduling from '../components/quickscheduling'
 import Footer from '../components/footer'
+import HeroSection from '../components/herosection'
+import Highlights from '../components/highlights'
+import Navbar from '../components/navbar'
+import QuickScheduling from '../components/quickscheduling'
+import Reviews from '../components/reviews'
+import SimpleAbout from '../components/simpleabout'
 
 const HomePage = () => {
   return (
@@ -20,7 +18,6 @@ const HomePage = () => {
         <Banner />
         <Reviews />
         <ContactAndsubscription />
-        <LiveMap />
         <QuickScheduling />
         <Footer />
 
