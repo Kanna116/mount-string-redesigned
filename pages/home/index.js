@@ -8,6 +8,7 @@ import Reviews from '../components/reviews'
 import LiveMap from '../components/livemap'
 import ContactAndsubscription from '../components/contactandsubscription'
 import QuickScheduling from '../components/quickscheduling'
+import Footer from '../components/footer'
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
         <ContactAndsubscription />
         <LiveMap />
         <QuickScheduling />
+        <Footer />
 
     </>
   )
