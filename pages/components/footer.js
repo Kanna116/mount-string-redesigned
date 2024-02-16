@@ -13,9 +13,9 @@ const Footer = () => {
     const currentYear = date.getFullYear();
 
     return (
-        <div className='w-full h-[70vh] relative shadow-[0px_-10px_20px_#00000005] flex items-start justify-center px-24 lg:px[64px] md:px-[64px]'>
+        <div className='w-full h-fit lg:h-[70vh] relative shadow-[0px_-10px_20px_#00000005] flex flex-col lg:flex-row items-start justify-center px-[24px] lg:px[64px] md:px-[64px]'>
             {/* company details */}
-            <div className="company-details w-1/3 h-full flex flex-col items-start justify-start gap-5">
+            <div className="company-details w-full lg:w-1/3 h-full flex flex-col items-start justify-start gap-5">
                 <div className="logo w-[150px] p-5 aspect-square">
                     <Image
                         src={logo}
@@ -28,7 +28,7 @@ const Footer = () => {
 
 
                 <h1 className='text-lg font-semibold'>{name}</h1>
-                <p className='text-xs w-2/3'>{address}</p>
+                <p className='text-xs lg:w-2/3 w-full'>{address}</p>
                 <div className='mt-7'>
                     <h4 className='text-base text-blue-600'>{phone}</h4>
                     <h4 className='text-base text-blue-600'>{mail}</h4>
@@ -36,11 +36,11 @@ const Footer = () => {
 
             </div>
             {/* Links */}
-            <div className="links w-2/3 h-full flex items-start justify-start">
+            <div className="links w-full lg:w-2/3 h-full flex flex-col lg:flex-row items-start justify-start pt-10 lg:pt-0">
                 {
                     footerLinks.map((item, index) => {
                         return (
-                            <div key={index} className='w-full pt-[150px] flex flex-col items-start gap-5 justify-start'>
+                            <div key={index} className='w-full lg:pt-[150px] pt-0 py-10 lg:py-0 flex flex-col items-start gap-5 justify-start'>
                                 <h1 className='text-xl font-semibold'>{item.head}</h1>
                                 <ul className='list-none'>
                                     {item.links.map((link, index) => {
@@ -51,7 +51,7 @@ const Footer = () => {
                         )
                     })
                 }
-                <div className='w-full pt-[150px] flex flex-col items-start gap-5 justify-start'>
+                <div className='w-full h-fit lg:h-full mt-10 lg:mt-0 lg:mb-0 mb-40 lg:pt-[150px] pt-0 flex flex-col items-start gap-5 justify-start'>
                     <h1 className='text-xl font-semibold'>Connect with us</h1>
                     <div className='flex items-center justify-between gap-5'>
                         <span className='text-3xl text-pink-700'><FaInstagram /></span>
@@ -63,7 +63,7 @@ const Footer = () => {
 
 
             {/* copyright */}
-            <h3 className='absolute bottom-10 left-10 flex items-center gap-2'>Copyright <span><FaRegCopyright /></span> {currentYear} Mount String Technologies</h3>
+            <h3 className='absolute lg:text-lg text-sm bottom-10 lg:left-10 left-5 flex items-center gap-2'>Copyright <span><FaRegCopyright /></span> {currentYear} Mount String Technologies</h3>
 
             <ScrollToTopBtn />
         </div>
