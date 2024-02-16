@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='w-full   lg:px-[100px] md:px-[64px] px-[24px]  flex items-center justify-between h-20'>
+        <div className='w-full lg:px-[100px] md:px-[64px] px-[24px]  flex items-center justify-between h-20 fixed top-0 left-0 bg-white z-[100]'>
             <div className="logo h-16 w-fit shrink-0">
                 <Image
                     src={'/images/mount-string-logo.webp'}
