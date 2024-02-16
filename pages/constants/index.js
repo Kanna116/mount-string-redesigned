@@ -116,6 +116,6 @@ export const reviews = [
 ]
 
 export const quickscheduling = {
-    text: `We value your business and you time . so let’s get on to a meeting . 
+    text: `We value your business and your time . so let’s get on to a meeting . 
     And Start the most wonderful projects of your choice`
 }
