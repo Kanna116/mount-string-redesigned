@@ -1,6 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
-import { companyDetails, footerLinks } from '../constants'
+import Image from 'next/image';
+import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { companyDetails, footerLinks } from '../constants';
 
 const Footer = () => {
 
@@ -34,7 +35,7 @@ const Footer = () => {
                             <div key={index} className='w-full pt-[150px] flex flex-col items-start gap-5 justify-start'>
                                 <h1 className='text-xl font-semibold'>{item.head}</h1>
                                 <ul className='list-none'>
-                                    {item.links.map((link,index)=>{
+                                    {item.links.map((link, index) => {
                                         return <li className='cursor-pointer'>{link}</li>
                                     })}
                                 </ul>
@@ -42,7 +43,14 @@ const Footer = () => {
                         )
                     })
                 }
-                <div className='w-full pt-[100px]'></div>
+                <div className='w-full pt-[150px] flex flex-col items-start gap-5 justify-start'>
+                    <h1 className='text-xl font-semibold'>Connect with us</h1>
+                    <div className='flex items-center justify-between gap-5'>
+                        <span className='text-3xl text-pink-700'><FaInstagram /></span>
+                        <span className='text-3xl text-blue-600'><FaFacebook /></span>
+                        <span className='text-3xl text-red-600'><FaYoutube /></span>
+                    </div>
+                </div>
             </div>
 
         </div>
