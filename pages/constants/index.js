@@ -119,3 +119,11 @@ export const quickscheduling = {
     text: `We value your business and your time . so let’s get on to a meeting . 
     And Start the most wonderful projects of your choice`
 }
+
+export const companyDetails={
+    name:'Mount String Technologies Private Limited',
+    address:'MIG-55,COMMERCIAL COMPLEX, Green Hills Road, KPHB Phase 15, Kukatpally, Hyderabad, Telangana, India',
+    logo:'/images/mount-string-logo.webp',
+    phone:'+91 8889997858',
+    mail:'info@mountstring.com',
+}

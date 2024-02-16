@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="company-details w-1/3 h-full flex flex-col items-start justify-start gap-5">
             <div className="logo w-[150px] p-5 aspect-square ">
                 <Image
-                src={'/images/mount-string-logo.webp'}
+                src={''}
                 width={500}
                 height={500}
                 alt='company logo'
