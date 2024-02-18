@@ -3,6 +3,7 @@ import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaInstagram, FaRegCopyright } from "react-icons/fa6";
 import { companyDetails, footerLinks } from '../constants';
 import ScrollToTopBtn from './scrolltotopbtn';
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -43,8 +44,12 @@ const Footer = () => {
                             <div key={index} className='w-full lg:pt-[150px] pt-0 py-10 lg:py-0 flex flex-col items-start gap-5 justify-start'>
                                 <h1 className='text-xl font-semibold'>{item.head}</h1>
                                 <ul className='list-none'>
-                                    {item.links.map((link, index) => {
-                                        return <li key={index} className='cursor-pointer'>{link}</li>
+                                    {item.links.map((item, index) => {
+                                        return (
+                                            <Link key={index} href={item.link}>
+                                                <li key={index} className='cursor-pointer'>{item.name}</li>
+                                            </Link>
+                                        )
                                     })}
                                 </ul>
                             </div>

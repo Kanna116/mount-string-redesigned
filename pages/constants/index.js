@@ -17,7 +17,7 @@ export const navlinks = [
     },
     {
         name: 'Careers',
-        link: '',
+        link: '/careers',
     },
     {
         name: 'About Us',
@@ -130,17 +130,42 @@ export const companyDetails = {
 
 export const footerLinks = [{
     head: 'Home',
-    links: ['Home', 'Careers']
+    links: [{
+        name: 'Home',
+        link: '/',
+    }, {
+        name: 'Careers',
+        link: '/careers'
+    }]
 }, {
     head: 'Courses',
-    links: ['Courses', 'Courses Register', 'Professional training', 'Certificate Validation'],
+    links: [{
+        name: 'Courses',
+        link: ''
+    }, {
+        name: 'Courses Register',
+        link: ''
+    }, {
+        name: 'Professional training',
+        link: ''
+    }, {
+        name: 'Certificate Validation',
+        link: ''
+    }],
 }, {
     head: 'Privacy',
-    links: ['Privacy and terms', 'Data Privacy']
+    links: [{
+        name: 'Privacy and terms',
+        link: ''
+    }, {
+        name: 'Data Privacy',
+        link: ''
+    }]
 }
 
+
 ]
-const  nothing=()=>{
+const nothing = () => {
     return <></>
 }
 
