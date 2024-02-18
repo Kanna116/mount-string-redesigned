@@ -5,6 +5,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { MdArrowOutward } from "react-icons/md";
 import { navlinks } from '../constants';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -38,7 +39,15 @@ const Navbar = () => {
 
             <ul className='h-full sm:hidden lg:flex hidden  items-center justify-between uppercase font-medium text-sm [&>*]:duration-100 tracking-wider  '>
                 {
-                    navlinks.map((item, index) => <li key={index} className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>{item.name}</li>)
+                    navlinks.map((item, index) => {
+                        return (
+                            <Link
+                            className='h-full'
+                            href={item.link}>
+                                <li key={index} className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>{item.name}</li>
+                            </Link>
+                        )
+                    })
                 }
             </ul>
 
