@@ -162,16 +162,7 @@ export const footerLinks = [{
         link: ''
     }]
 }
-    // export const footerLinks = [{
-    //     head: 'Home',
-    //     links: ['Home', 'Careers']
-    // }, {
-    //     head: 'Courses',
-    //     links: ['Courses', 'Courses Register', 'Professional training', 'Certificate Validation'],
-    // }, {
-    //     head: 'Privacy',
-    //     links: ['Privacy and terms', 'Data Privacy']
-    // }
+
 
 ]
 const nothing = () => {
