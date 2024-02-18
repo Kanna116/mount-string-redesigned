@@ -42,9 +42,10 @@ const Navbar = () => {
                     navlinks.map((item, index) => {
                         return (
                             <Link
-                            className='h-full'
-                            href={item.link}>
-                                <li key={index} className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>{item.name}</li>
+                                className='h-full'
+                                href={item.link}
+                                key={index} >
+                                <li className='hover:bg-zinc-100 h-full grid place-items-center px-5 cursor-pointer hover:border-b-[1px] border-zinc-950'>{item.name}</li>
                             </Link>
                         )
                     })
