@@ -4,13 +4,8 @@ import CareerBanner from '../components/careerbanner'
 import CurrentOpenings from '../components/currentopenings'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import { currentOpenings } from '../constants'
 
 const CareersPage = () => {
-
-
-
-
   return (
     <>
       <Navbar />

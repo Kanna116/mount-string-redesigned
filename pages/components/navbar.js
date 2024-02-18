@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { CiUser } from "react-icons/ci";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { MdClose } from "react-icons/md";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward, MdClose } from "react-icons/md";
 import { navlinks } from '../constants';
 import Link from 'next/link';
 
@@ -75,7 +74,9 @@ const Navbar = () => {
                             <MdClose />
                         </span>
                         {
-                            navlinks.map((item, index) => <li key={index} className='w-fit px-5 cursor-pointer text-2xl border-zinc-950 flex items-center duration-300 group [&>*]:duration-300 hover:translate-x-[30px]'><span className='scale-0 text-3xl group-hover:scale-100'><MdArrowOutward /></span> {item.name}</li>)
+                            navlinks.map((item, index) => <li key={index} className='w-fit px-5 cursor-pointer text-2xl border-zinc-950 flex items-center duration-300 group [&>*]:duration-300 hover:translate-x-[30px]'><span className='scale-0 text-3xl group-hover:scale-100'><MdArrowOutward /></span>
+                                <Link href={item.link} onClick={() => setMenu(false)}>{item.name}</Link>
+                            </li>)
                         }
                         <div className='h-[0.1px] w-[90%] bg-zinc-900 mx-auto'></div>
 
