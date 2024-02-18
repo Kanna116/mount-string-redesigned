@@ -1,7 +1,7 @@
 export const navlinks = [
     {
         name: 'Home',
-        link: '',
+        link: '/',
     },
     {
         name: 'Our services',
@@ -164,6 +164,30 @@ export const footerLinks = [{
 }
 
 
+]
+
+
+export const currentOpenings = [
+    {
+        title: 'GIS Process Associate',
+        desc: `Must be graduate.Needed both experienced & non-experienced.Experience with data management and spatial analysis, Mapping and visualization, quality control, Gis software and tools.`,
+        link: ''
+    },
+    {
+        title: 'Software Engineer',
+        desc: `0-2 Years Experience Backend Development, Node JS, Python Good Communication and typing skills required.`,
+        link: ''
+    },
+    {
+        title: 'Business Development Executives',
+        desc: `Passionate on getting clients who can get the business deals from the leads we provide.`,
+        link: ''
+    },
+    {
+        title: 'AWS Trainer',
+        desc: `Must be graduate.Proven experience in designing and delivering AWS training programs. Strong communication and presentation skills.Ability to adapt training materials for various learning styles and levels.Experience with hands-on labs and practical exercises.`,
+        link: ''
+    },
 ]
 const nothing = () => {
     return <></>
